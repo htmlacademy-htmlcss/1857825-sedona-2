@@ -2,7 +2,7 @@
 
 * Студент: [Татьяна Кравцова](https://up.htmlacademy.ru/htmlcss-individual/2/user/1857825).
 * Наставник: [Дина Шарипова](https://htmlacademy.ru/profile/id1418957).
-
+* Сайт: [Мой проект Седона](https://tatyanakravtsova.github.io/1857825-sedona-2/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
