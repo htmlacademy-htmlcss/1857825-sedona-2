@@ -1,0 +1,263 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url(../fonts/ptsans-400.woff2) format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  src: url(../fonts/ptsans-700.woff2) format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 23px;
+  background-color: #F2F2F2;
+  color: #000000;
+}
+
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color:#FFFFFF;
+  background-color: #756157;
+}
+
+/*pages*/
+
+.page-header {
+  background-color: #FFFFFF;
+}
+
+.navigation-link {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+}
+
+.navigation-user-link {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.main-index {
+  background-color: #FFFFFF;
+}
+
+.hero {
+  background-image: url(../pictures/hero-background.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.lead, .slogan-title, .searching-title, .subscribe-title, .advice-title {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 36px;
+  text-align: center;
+}
+
+.advantages-text, .slogan-text, .searching-text,  .subscribe-text{
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+}
+/* List*/
+
+.advantages-list, .advice-list {
+  text-align: center;
+}
+
+/*Title*/
+
+.advantages-item-title, .advice-item-title {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+/*text*/
+
+.advantages-item-text, .advice-item-text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+/*subscribe*/
+
+.subscribe {
+  background-image: url(../pictures/subscribe.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: #82B3D3;
+  color: #FFFFFF;
+}
+
+.subscribe-button {
+  background-color: #82B3D3;
+}
+
+/*footer*/
+
+.page-footer {
+  background-color: #FFFFFF;
+}
+
+.footer-phone {
+  font-size: 40px;
+  font-weight: 400;
+  font-transform: uppercase;
+  line-height: 40px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.social-link, .copyright {
+  text-decoration: none;
+  color: #000000;
+}
+
+.main-catalog {
+  background-color: #FFFFFF;
+}
+/* Breadcrumbs */
+.breadcrumbs-link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.filter-container {
+  background-image: url(../pictures/filter.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: #82B3D3;
+  color: #FFFFFF;
+}
+
+/* Title */
+.filter-title {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 78px;
+}
+
+.filter-button {
+  background-color: #82B3D3;
+}
+
+.filter-group-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.control-input {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.list-view-button {
+  text-decoration: none;
+  color: #000000;
+}
+.catalog-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.catalog-sorting {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #333333;
+}
+
+.catalog-card {
+  background-color: #FFFFFF;
+}
+
+.catalog-card-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.catalog-card-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.type-description, .card-price {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #333333;
+}
+
+.favourite {
+  background-color:#82B3D3;
+}
+
+.rating {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #333333;
+  text-transform: uppercase;
+  background-color: #F2F2F2;
+}
+
+/*pagination*/
+
+.pagination {
+  background-color: #FFFFFF;
+}
+
+.pagination-link {
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.pagination-current {
+  color: #000000;
+  background-color: #F2F2F2;
+}
+
+.pagination-points {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.catalog-subscribe {
+  background-color: #FFFFFF;
+}
+
+.subscribe-input {
+  background-color: #F2F2F2;
+}
