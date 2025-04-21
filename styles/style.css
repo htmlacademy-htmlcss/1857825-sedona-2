@@ -2149,8 +2149,8 @@ img {
   position: absolute;
   top: 100%;
   left: 0;
-  margin-left: 157px;
-  margin-top: 5px;
+  margin-left: 156px;
+  margin-top: 4px;
 }
 
 .date-check {
@@ -2163,8 +2163,8 @@ img {
   position: absolute;
   top: 100%;
   left: 0;
-  margin-left: 157px;
-  margin-top: 5px;
+  margin-left: 156px;
+  margin-top: 4px;
 }
 
 .modal-input {
@@ -2246,7 +2246,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   gap: 88px;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .customers-wrapper {
@@ -2410,7 +2410,7 @@ img {
   -webkit-transform: translateX(-50%) rotate(180deg);
           transform: translateX(-50%) rotate(180deg);
   border: 10px solid transparent;
-  border-top: 10px solid #333333;
+  border-top: 12px solid #333333;
  }
 
 .tooltip-toggle:hover + .tooltip-text,
