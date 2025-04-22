@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="container">
-      <header class="page-header">
+      <header class="page-header" data-test="header">
         <nav class="navigation">
           <a class="header-logo" href="index.html">
             <img class="page-header-logo" src="images/logo.svg" width="140" height="70"  alt="Логотип города «Седона»">
@@ -43,8 +43,8 @@
           </ul>
         </nav>
       </header>
-      <main class="main-catalog main-container">
-        <div class="filter-container">
+      <main class="main-catalog main-container" data-test="main">
+        <div class="filter-container" data-test="filter">
           <section class="filter-header">
             <h1 class="filter-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
@@ -66,20 +66,23 @@
                 <ul class="filter-group-list">
                   <li class="filter-group-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="pool" checked>
-                      Бассейн
+                      <input class="visually-hidden control-input" type="checkbox" name="pool" checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Бассейн</span>
                     </label>
                   </li>
                   <li class="filter-group-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="parking" checked>
-                      Парковка
+                      <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Парковка</span>
                     </label>
                   </li>
                   <li class="filter-group-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="Wi-Fi">
-                      Wi-Fi
+                      <input class="visually-hidden control-input" type="checkbox" name="Wi-Fi">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Wi-Fi</span>
                     </label>
                   </li>
                 </ul>
@@ -89,31 +92,51 @@
                 <ul class="filter-group-list">
                   <li class="filter-group-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="type-placements" value="hotel" checked>
-                      Гостиница
+                      <input class="visually-hidden control-input" type="radio" name="type-placements" value="hotel" checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Гостиница</span>
                     </label>
                   </li>
                   <li class="filter-group-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="type-placements" value="motel">
-                      Мотель
+                      <input class="visually-hidden control-input" type="radio" name="type-placements" value="motel">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Мотель</span>
                     </label>
                   </li>
                   <li class="filter-group-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="type-placements" value="apartments">
-                      Апартаменты
+                      <input class="visually-hidden control-input" type="radio" name="type-placements" value="apartments">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Апартаменты</span>
                     </label>
                   </li>
                 </ul>
               </fieldset>
               <fieldset class="filter-group filter-cost">
-                <legend class="filter-group-title">Стоимость, ₽</legend>
-                <div class="filter-price-wrapper">
-                  <input type="text" class="filter-price" placeholder="от" value="0">
-                  <input type="text" class="filter-price" placeholder="до" value="9000">
+                <legend class="filter-group-title">Стоимость, ₽:</legend>
+                <div class="range">
+                  <div class="filter-price-wrapper">
+                    <label class="placeholder-wrapper filter-price--min">
+                      <input type="text" class="filter-price filter-price--min" placeholder="от" value="0">
+                      <span class="placeholder">от</span>
+                    </label>
+                    <label class="placeholder-wrapper filter-price--max">
+                      <input type="text" class="filter-price filter-price--max" placeholder="до" value="9000">
+                      <span class="placeholder">до</span>
+                    </label>
+                  </div>
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 0; width: 226px">
+                      <button class="range-toggle toggle-min" type="button">
+                        <span class="visually-hidden">Изменить минимальную цену</span>
+                      </button>
+                      <button class="range-toggle toggle-max" type="button">
+                        <span class="visually-hidden">Изменить максимальную цену</span>
+                      </button>
+                    </div>
+                  </div>
                 </div>
-                <input class="filter-price" type="range" min="0" max="9000" step="100" value="0">
               </fieldset>
               <div class = "filter-button-wrapper">
                 <button class="filter-button button-light" type="submit">Применить</button>
@@ -152,7 +175,6 @@
             <li class="catalog-card">
               <a class="catalog-card-link" href="#">
                 <img class="catalog-card-image" src="pictures/hotel-amara.jpg" alt="Звездное небо" width="300" height="212">
-
                 <h3 class="catalog-card-title">Amara Resort & Spa</h3>
               </a>
                 <p class="type-description">Гостиница</p>
@@ -223,18 +245,18 @@
             </li>
           </ul>
         </section>
-        <section class="subscribe catalog-subscribe">
+        <section class="subscribe catalog-subscribe" data-test="subscribe">
           <h2 class="subscribe-title subscribe-dark lead">Подпишитесь на рассылку</h2>
           <p class="subscribe-text subscribe-dark desc-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label for="email">
-              <input class="subscribe-input" type="email" id="email" name="email" placeholder="Ваш e-mail">
+              <input class="subscribe-input" type="email" id="email" name="email" placeholder="Ваш e-mail" required>
             </label>
             <button class="subscribe-button button-light" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
-      <footer class="page-footer">
+      <footer class="page-footer" data-test="footer">
         <h2 class="visually-hidden">
             Социальные сети
         </h2>
@@ -255,10 +277,14 @@
             </a>
           </li>
         </ul>
-        <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <a class="copyright" href="https://htmlacademy.ru/">
-          <span class="visually-hidden">Логотип HTML Academy"</span>
-        </a>
+        <div class="adress">
+          <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        </div>
+        <div class="copyright-wrapper">
+          <a class="copyright" href="https://htmlacademy.ru/">
+            <span class="visually-hidden">Логотип HTML Academy"</span>
+          </a>
+        </div>
       </footer>
     </div>
   </body>
