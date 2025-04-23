@@ -32,8 +32,7 @@ body {
 
 img {
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .button {
@@ -271,7 +270,7 @@ img {
   transition: opacity 0.3s ease;
   margin-left: 70px;
   margin-right: 28px;
-  margin-bottom: -5px;
+  margin-bottom: -6px;
   z-index: 1;
 }
 
@@ -412,7 +411,7 @@ img {
 }
 
 .advantages-title-wrapper {
-  padding: 69px 270px 90px 270px;
+  padding: 70px 270px 90px 270px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -830,12 +829,12 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   min-height: 120px;
-  gap: 41.5px;
+  gap: 236px;
 }
 
 .social-list {
   min-height: 50px;
-  max-width: 210px;
+  max-width: 145px;
   padding-left: 0;
   list-style-type: none;
   margin-left: 70px;
@@ -940,10 +939,11 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  max-width: 740px;
+ width: 332px;
 }
 
 .footer-phone {
+  width: 100%;
   min-height: 50px;
   font-size: 40px;
   font-weight: 400;
@@ -952,11 +952,11 @@ img {
   color: #000000;
   text-decoration: none;
   text-align: center;
-  min-width: 720px;
   display: inline-block;
   margin-top: 40px;
   margin-bottom: 30px;
-  padding-top: 5px;
+  padding-top: 6px;
+  padding-left: 1px;
 }
 
 .footer-phone:hover,
@@ -1292,7 +1292,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 55px;
+  margin-top: 56px;
 }
 
 .filter-button {
@@ -1332,7 +1332,7 @@ img {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
-  margin-bottom: 31px;
+  margin-bottom: 32px;
   padding: 0;
   }
 
@@ -1622,15 +1622,14 @@ img {
 .catalog-card {
   background-color: #FFFFFF;
   width: 340px;
-  padding: 19px;
-  border:  solid 1px #E5E5E5;
+  padding: 20px;
+  box-shadow: inset 0 0 0 1px #e6e6e6;
   border-radius: 4px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 20px 1fr;
-  grid-template-columns: 1fr 1fr;
+  grid: 1fr/1fr;
   -ms-grid-rows: auto 16px auto 16px auto 16px auto;
-  grid-template-rows: auto auto auto auto;
   row-gap: 16px;
   -webkit-column-gap: 20px;
      -moz-column-gap: 20px;
@@ -1705,6 +1704,7 @@ img {
 }
 
 .catalog-card-link {
+  max-width:300px;
   text-decoration: none;
   color: #000000;
   grid-column: 1/-1;
@@ -1725,15 +1725,12 @@ img {
   margin: 0;
 }
 
-.card-wrapper {
-  display: -ms-grid;
+.card-data {
   display: grid;
-  -ms-grid-columns: 50% 10px 50%;
-  grid-template-columns: 50% 50%;
-  -webkit-column-gap: 10px;
-     -moz-column-gap: 10px;
-          column-gap: 10px;
+  grid-template-columns: 1fr 1fr;
   row-gap: 16px;
+  column-gap: 20px;
+  align-items: stretch;
 }
 
 .type-description, .stars {
@@ -1744,6 +1741,7 @@ img {
   margin: 0;
   padding: 0;
   max-width: 140px;
+  align-self: center;
 }
 
 .four::before {
@@ -1755,19 +1753,19 @@ img {
   background-repeat: space no-repeat;
   background-position: center;
   background-size: contain;
-  margin-top: 10px;
+  margin-top: 1px;
 }
 
 .three::before {
   content: "";
   display: inline-block;
-  width: 64px;
+  width: 65px;
   height: 17px;
   background-image: url(../icons/star.svg);
   background-repeat: space no-repeat;
   background-position: center;
   background-size: contain;
-  margin-top: 10px;
+  margin-top: 1px;
 }
 
 .two::before {
@@ -1779,7 +1777,7 @@ img {
   background-repeat: space no-repeat;
   background-position: center;
   background-size: contain;
-  margin-top: 10px;
+  margin-top: 1px;
 }
 
 .card-price {
@@ -1881,7 +1879,7 @@ img {
 
 .pagination {
   background-color: #FFFFFF;
-  margin: 0 70px 59px 70px;
+  margin: 0 70px 60px 70px;
 }
 
 .pagination::before {
@@ -1890,7 +1888,7 @@ img {
   width: 1060px;
   height: 1px;
   background-color: #E5E5E5;
-  margin-bottom: 34px;
+  margin-bottom: 33px;
   border: none;
 }
 
@@ -2168,6 +2166,7 @@ img {
 }
 
 .modal-input {
+  min-width: 440px;
   font-family: inherit;
   font-size: 18px;
   font-weight: 700;
@@ -2183,7 +2182,7 @@ img {
 }
 
 .modal-input::-webkit-input-placeholder {
-  font-family: 'PT Sans';
+  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -2191,7 +2190,7 @@ img {
 }
 
 .modal-input::-moz-placeholder {
-  font-family: 'PT Sans';
+  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -2199,7 +2198,7 @@ img {
 }
 
 .modal-input:-ms-input-placeholder {
-  font-family: 'PT Sans';
+  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -2207,7 +2206,7 @@ img {
 }
 
 .modal-input::-ms-input-placeholder {
-  font-family: 'PT Sans';
+  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -2215,7 +2214,7 @@ img {
 }
 
 .modal-input::placeholder {
-  font-family: 'PT Sans';
+  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -2291,7 +2290,7 @@ img {
 }
 
 .count::-webkit-input-placeholder {
-  font-family: 'PT Sans';
+  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -2301,7 +2300,7 @@ img {
 }
 
 .count::-moz-placeholder {
-  font-family: 'PT Sans';
+  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -2311,7 +2310,7 @@ img {
 }
 
 .count:-ms-input-placeholder {
-  font-family: 'PT Sans';
+  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -2321,7 +2320,7 @@ img {
 }
 
 .count::-ms-input-placeholder {
-  font-family: 'PT Sans';
+  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -2331,7 +2330,7 @@ img {
 }
 
 .count::placeholder {
-  font-family: 'PT Sans';
+  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
