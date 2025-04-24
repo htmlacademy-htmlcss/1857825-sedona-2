@@ -166,7 +166,8 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0 0 0 16px;
-  gap: 32px;
+  column-gap: 32px;
+  row-gap: 1px;
 }
 
 .navigation-item {
@@ -319,6 +320,12 @@ img {
   padding: 0;
 }
 
+.user-button-wrapper {
+  height: 64px;
+  display: flex;
+  align-items: center;
+}
+
 .navigation-user-button {
   display: block;
   font-family: inherit;
@@ -326,6 +333,7 @@ img {
   font-weight: 700;
   text-decoration: none;
   padding: 8px 34px;
+  margin-right: 70px;
   border-radius: 4px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -335,7 +343,7 @@ img {
 }
 
 .navigation-user {
-  min-width: 270px;
+  min-width: 64px;
   padding-left: 0;
   list-style-type: none;
   display: -webkit-box;
@@ -344,15 +352,15 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-left: auto;
-  margin-right: 70px;
+  margin-right: 20px;
   margin-top: 0;
   margin-bottom: 0;
-  -webkit-box-align: center;
+  /*-webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center;
+          justify-content: center;*/
 }
 
 .navigation-user-item {
@@ -361,7 +369,7 @@ img {
   margin: 0;
   padding: 0;
 }
-
+/*
 .navigation-user-item:nth-child(3) {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -373,7 +381,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
+}*/
 .main-index {
   background-color: #FFFFFF;
 }
@@ -509,6 +517,7 @@ img {
   margin: 30px auto;
 }
 .advantages-item-text {
+  font-family: inherit;
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
@@ -517,18 +526,19 @@ img {
   margin: 0 auto;
 }
 
-.advantages-item--photo {
+.advantages-item:first-child,
+.advantages-item:last-child {
   background-color: #82B3D3;
   background-size: 100% auto;
   color: #FFFFFF;
 }
 
-.advantages-item--even {
+.advantages-item:nth-child(even):not(:first-child):not(:last-child) {
   background-color: rgba(131, 179, 211, 0.12);
   background-size: 100% auto;
 }
 
-.advantages-item--central {
+.advantages-item:nth-child(odd):not(:first-child):not(:last-child) {
   background-color: rgba(131, 179, 211, 0.20);
   background-size: 100% auto;
 }
@@ -641,7 +651,7 @@ img {
   width: 180px;
 }
 
-.advice-item--odd {
+.advice-item:nth-child(odd) {
   background-color: rgba(131, 179, 211, 0.12);
   background-size: 100% auto;
 }
@@ -831,6 +841,7 @@ img {
       flex-wrap: wrap;
   min-height: 120px;
   gap: 236px;
+  align-items: start;
 }
 
 .social-list {
@@ -844,13 +855,14 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: auto;
-  margin-bottom: auto;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 0;
 }
 
 .social-item {
   min-width: 47px;
-  min-height: 40px;
+  height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -878,7 +890,7 @@ img {
   width: 47px;
   height: 40px;
   background-color: #83B3D3;
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
 .vk::before {
@@ -955,7 +967,6 @@ img {
   text-align: center;
   display: inline-block;
   margin-top: 40px;
-  margin-bottom: 30px;
   padding-top: 6px;
   padding-left: 1px;
 }
@@ -992,7 +1003,6 @@ img {
   color: #000000;
   display: inline-block;
   margin-top: 40px;
-  margin-bottom: 30px;
 }
 
 .copyright::before {
@@ -1000,8 +1010,8 @@ img {
   display: inline-block;
   width: 115px;
   height: 33px;
-  -webkit-mask-image: url(../icons/Logo_htmlAcademy.svg);
-          mask-image: url(../icons/Logo_htmlAcademy.svg);
+  -webkit-mask-image: url(../icons/logo_html_academy.svg);
+          mask-image: url(../icons/logo_html_academy.svg);
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
   -webkit-mask-position: center;
@@ -1094,7 +1104,7 @@ img {
   min-width: 13px;
   min-height: 15px;
   display: inline-block;
-  background-image: url(../icons/breadcrumbsHouse.svg);
+  background-image: url(../icons/breadcrumbs_house.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 13px 15px;
@@ -1126,7 +1136,7 @@ img {
   display: inline-block;
   width: 8px;
   height: 20px;
-  background-image: url(../icons/breadcrumbsArrow.svg);
+  background-image: url(../icons/breadcrumbs_arrow.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 8px 20px;
@@ -1437,6 +1447,10 @@ img {
   border-radius: 5px;
   border: none;
   cursor: pointer;
+}
+
+.range-toggle:hover {
+  outline: 3px solid rgba(131, 179, 211, 1);
 }
 
 .range-toggle:focus {
